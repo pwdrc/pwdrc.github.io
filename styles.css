@@ -1,6 +1,7 @@
 nav {
     display: flex;
     justify-content: space-between;
+    z-index: 1; /* Add this line */
     position: fixed;
     top: 0;
     left: 0;
@@ -27,11 +28,80 @@ main {
 }
 
 .carinhas {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 1rem;
+    display: inline-block;
+    position: relative;
+    height: 34px;
+    width: 100px;    
+    color: black;
 }
+
+.carinha {
+    top: 0;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+    animation: animaCarinhas 12s linear infinite;
+    opacity: 0;
+    width: 150px;
+    animation: animaCarinhas 12s linear infinite;
+    animation-name: animaCarinhas;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+
+  }
+  
+  
+  @keyframes animaCarinhas {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    2% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    18% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    20% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+  }
+  
+  .carinha:first-child {
+    animation-delay: 0s;
+  }
+  
+  .carinha:nth-child(2) {
+    animation-delay: 2s;
+  }
+  
+  .carinha:nth-child(3) {
+    animation-delay: 4s;
+  }
+  
+  .carinha:nth-child(4) {
+    animation-delay: 6s;
+  }
+  
+  .carinha:nth-child(5) {
+    animation-delay: 8s;
+  }
+  
+  .carinha:nth-child(6) {
+    animation-delay: 10s;
+  }
 
 #inicio {
     position: relative;
@@ -61,3 +131,6 @@ pre {
     margin: 0;
     width: 150px;
 }
+
+
+
