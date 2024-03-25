@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #CA3E47;
+    --primary-color: #D72323;
     --secondary-color: #000000;
-    --tertiary-color: #D3D6DB;
+    --tertiary-color: #3E3636;
     --font-color: #D3D6DB;
 }
 
@@ -164,34 +164,17 @@ a:hover {
 }
 
 #meu-nome {
-    font-size: 15vw;
+    font-size: 20vw;
     font-weight: bold;
     color: var(--font-color);
     text-align: center;
 }
 
-@media (max-width: 768px) {
-    #meu-nome {
-        font-size: 10vw;
-    }
-}
-
-@media (max-width: 576px) {
-    #meu-nome {
-        font-size: 6vw;
-    }
-}
-
-@media (max-width: 414px) {
-    #meu-nome {
-        font-size: 4vw;
-    }
-}
-
-@media (max-width: 320px) {
-    #meu-nome {
-        font-size: 2vw;
-    }
+#meu-nome h1 {
+    font-size: 20vw;
+    font-weight: bold;
+    color: var(--font-color);
+    text-align: center;
 }
 
 #sobre {
@@ -207,8 +190,88 @@ a:hover {
 }
 
 #div-titulo-sobre {
-    margin-left: 2rem;
-    transform: rotate(-60deg);
-    ;
+    font-size: 5rem;
+    margin-left: 5rem;
+    transform: rotate(-90deg);
+    text-decoration: underline;
+    text-decoration-thickness: 8px;
 }
 
+
+#div-texto-sobre {
+    margin-right: 10rem;
+    margin-left: 3rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+#projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 0 140px;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: #3E3636;
+    margin: 0;
+    color: var(--font-color)
+}
+
+#div-titulo-projetos {
+    top: 0;
+    left: 0;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 5rem;
+    transform: rotate(-90deg);
+    text-decoration: underline;
+    text-decoration-thickness: 8px;
+}
+
+.pjt a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 0 140px;
+    width: 100%;
+    font-size: 2.5rem;
+    background-color: var(--tertiary-color);
+    margin: 0;
+    color: var(--font-color)
+}
+
+.normal {
+    font-weight: normal;
+}
+#div-titulo-contato {
+    margin-left: 5rem;
+    font-size: 5rem;
+    transform: rotate(-90deg);
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+
+@media (max-width: 414px) {
+    #sobre {
+        display: block;
+    }
+
+    #div-titulo-sobre {
+        font-size: 3rem;
+        margin-left: 2.3rem;
+        transform: rotate(-15deg);
+        margin-bottom: 3rem;
+    }
+
+    #div-texto-sobre {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        margin-top: 6rem;
+    
+    }
+
+    #projetos {
+        display: block;
+    }
+}
