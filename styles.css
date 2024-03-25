@@ -1,4 +1,15 @@
-nav {
+:root {
+    --primary-color: #CA3E47;
+    --secondary-color: #000000;
+    --tertiary-color: #D3D6DB;
+    --font-color: #D3D6DB;
+}
+
+body {
+    font-family: Epilogue, sans-serif;
+}
+
+.nav {
     display: flex;
     justify-content: space-between;
     z-index: 1; /* Add this line */
@@ -6,10 +17,17 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    height: 8vh;
     box-sizing: border-box;
     align-items: center;
-    background-color: #f4f4f4;
+    background-color: var(--primary-color);
+    transition: background-color 0.5s;
+}
+
+.scroll-nav {
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s;
 }
 
 ul {
@@ -17,22 +35,39 @@ ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    color: var(--font-color);
 }
+
 
 li {
     margin-right: 1rem;
 }
 
-main {
-    margin-top: 5rem;
+a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: bold;
+    font-size: 1.25rem;
 }
+
+a:hover {
+    font-size: 1.3rem;
+    color: rgb(204, 204, 204);
+}
+
 
 .carinhas {
     display: inline-block;
     position: relative;
     height: 34px;
     width: 100px;    
-    color: black;
+    color: var(--font-color);
+    font-size: 1.7rem;
+    font-weight: bold;
+    left: 1%;
+    top: 3px;
+    bottom: 1%;
+    font-style: italic;
 }
 
 .carinha {
@@ -111,10 +146,9 @@ main {
     width: 100%;
     align-items: center;
     justify-content: center;
-    margin: 100 0 110px;
+    margin: 0;
     height: 100vh;
-    background-color: #000;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    background-color: var(--primary-color);
 }
 
 #apresentacao {
@@ -124,13 +158,57 @@ main {
     position: absolute;
 }
 
-pre {
-    font-family: 'Fira', monospace;
-    font-size: 1.1rem;
-    color: #fff;
+* {
     margin: 0;
-    width: 150px;
+    padding: 0;
 }
 
+#meu-nome {
+    font-size: 15vw;
+    font-weight: bold;
+    color: var(--font-color);
+    text-align: center;
+}
 
+@media (max-width: 768px) {
+    #meu-nome {
+        font-size: 10vw;
+    }
+}
+
+@media (max-width: 576px) {
+    #meu-nome {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 414px) {
+    #meu-nome {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 320px) {
+    #meu-nome {
+        font-size: 2vw;
+    }
+}
+
+#sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 0 134px;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: var(--secondary-color);
+    margin: 0;
+    color: var(--font-color)
+}
+
+#div-titulo-sobre {
+    margin-left: 2rem;
+    transform: rotate(-60deg);
+    ;
+}
 
