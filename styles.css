@@ -186,7 +186,8 @@ a:hover {
     font-size: 1.5rem;
     background-color: var(--secondary-color);
     margin: 0;
-    color: var(--font-color)
+    color: var(--font-color);
+    height: 100vh;
 }
 
 #div-titulo-sobre {
@@ -215,7 +216,8 @@ a:hover {
     font-size: 1.5rem;
     background-color: #3E3636;
     margin: 0;
-    color: var(--font-color)
+    color: var(--font-color);
+    height: 100vh;
 }
 
 #div-titulo-projetos {
@@ -230,7 +232,7 @@ a:hover {
 }
 
 .pjt a {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     padding: 140px 0 140px;
@@ -238,18 +240,84 @@ a:hover {
     font-size: 2.5rem;
     background-color: var(--tertiary-color);
     margin: 0;
-    color: var(--font-color)
+    color: var(--font-color);
+    padding: 2rem;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.pjt a:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .normal {
     font-weight: normal;
 }
+
+#contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 0 140px;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    margin: 0;
+    color: var(--font-color);
+    height: 100vh;
+}
+                                                                                                                                                                                                                                                                                    
 #div-titulo-contato {
     margin-left: 5rem;
     font-size: 5rem;
     transform: rotate(-90deg);
     text-decoration: underline;
     text-decoration-thickness: 4px;
+}
+
+#div-texto-contato {
+    margin-right: 10rem;
+    margin-left: 3rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.cont {
+    display: block;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cont a {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color:#000000;
+    font-weight: 500;
+}   
+
+.cont a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+
+#posts {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 0 140px;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: var(--secondary-color);
+    margin: 0;
+    color: var(--font-color);
+    height: 100vh;
+
 }
 
 @media (max-width: 414px) {
@@ -274,4 +342,61 @@ a:hover {
     #projetos {
         display: block;
     }
+
+    #div-titulo-projetos {
+        font-size: 3rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        transform: rotate(-15deg);
+    }
+
+    .pjt a {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    #contato {
+        display: block;
+    }
+
+    #div-titulo-contato {
+        font-size: 3rem;
+        margin-left: 2.3rem;
+        transform: rotate(-15deg);
+    }
+
+    #div-texto-contato {
+        margin-right: 2rem;
+        margin-left: 2rem;
+        margin-top: 6rem;
+    }
+
+    .cont {
+        display: block;
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .cont a {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        color:#000000;
+        font-weight: 500;
+    }
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    margin: 0;
+    color: var(--font-color);
+    height: 8vh;
 }

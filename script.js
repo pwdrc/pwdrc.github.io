@@ -21,7 +21,7 @@ function altNav() {
   const nav = document.getElementsByClassName("nav")[0];
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 1) {
       nav.classList.add("scroll-nav");
     } else {
       nav.classList.remove("scroll-nav");
