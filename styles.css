@@ -391,7 +391,7 @@ footer {
     height: 8vh;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     header {
         height: 20%;
@@ -408,7 +408,7 @@ footer {
         color: white
     }
 
-    .menu-hamburguer-elements{
+    .menu-hamburguer-elements {
         width: 60%;
         height: 100%;
         background-color: rgba(10,10,10,.9);
@@ -428,7 +428,7 @@ footer {
         z-index: -1;
     }
 
-    .menu{
+    .menu {
         display: flex;
         height: 60px;
         width: 60px;
