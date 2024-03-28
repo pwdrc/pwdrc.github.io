@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: Epilogue, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .nav {
@@ -104,18 +104,22 @@ li {
     margin-right: 1rem;
 }
 
-a {
+.nav a {
     text-decoration: none;
     color: var(--font-color);
     font-weight: bold;
     font-size: 1.25rem;
 }
 
-a:hover {
-    font-size: 1.3rem;
-    color: rgb(204, 204, 204);
+.nav a:hover {
+    color: rgb(255, 169, 169);
+    transition: color 0.3s ease-in-out;
 }
 
+.scroll-nav a:hover {
+    color: rgb(155, 155, 155);
+    transition: color 0.3s ease-in-out;
+}
 
 .carinhas {
     display: inline-block;
@@ -125,7 +129,7 @@ a:hover {
     color: var(--font-color);
     font-size: 1.7rem;
     font-weight: bold;
-    left: 1%;
+    left: 3.33%;
     top: 3px;
     bottom: 1%;
     font-style: italic;
@@ -248,8 +252,9 @@ a:hover {
 }
 
 #div-titulo-sobre {
-    font-size: 5rem;
-    margin-left: 5rem;
+    display: block;
+    font-size: 3.5rem;
+    margin-left: -2.5rem;
     transform: rotate(-90deg);
     text-decoration: underline;
     text-decoration-thickness: 8px;
@@ -257,10 +262,11 @@ a:hover {
 
 
 #div-texto-sobre {
-    margin-right: 10rem;
-    margin-left: 3rem;
+    margin-right: 1.5rem;
+    margin-left: -1rem;
+    margin-top: auto;
+    margin-bottom: auto;
     text-align: justify;
-    margin-bottom: 1rem;
     font-size: 2rem;
 }
 
@@ -415,15 +421,13 @@ footer {
         position: fixed;
         right: -60%;
         top: 0;
-        margin-top: -20%;
-        transition: left cubic-bezier(1,0,0,1) .8s;
+        margin-top: 0;
+        transition: right cubic-bezier(1,0,0,1) .8s;
         
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
-    
-        padding-top: 15vh;
     
         z-index: -1;
     }
@@ -438,16 +442,14 @@ footer {
         right: 10px;
     }
 
-
     #sobre {
         display: block;
     }
 
     #div-titulo-sobre {
-        font-size: 3rem;
-        margin-left: 2.3rem;
-        transform: rotate(-15deg);
-        margin-bottom: 3rem;
+        font-size: 2rem;
+        margin: 0rem 5rem 0rem 5rem;
+        transform: rotate(0deg);
     }
 
     #div-texto-sobre {
@@ -503,5 +505,4 @@ footer {
         color:#000000;
         font-weight: 500;
     }
-
 }

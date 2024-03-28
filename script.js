@@ -1,6 +1,5 @@
 function altNav() {
-  const nav = document.getElementsByClassName("nav")[0];
-
+  const nav = document.getElementsByClassName("nav")[0]; 
   window.addEventListener("scroll", () => {
     if (window.scrollY > 1) {
       nav.classList.add("scroll-nav");
@@ -10,5 +9,4 @@ function altNav() {
   });
 }
 
-// Inicia a escrita do código quando a página carrega
 altNav();
