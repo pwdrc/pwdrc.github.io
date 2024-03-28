@@ -89,7 +89,7 @@ input:checked ~ label .hamburguer:after {
 }
 
 input:checked ~ .menu-hamburguer-elements{
-    left: 0;
+    right: 0;
 }
 
 ul {
@@ -398,14 +398,14 @@ footer {
     }
 
     .show {
-
+        font-size: 2.5rem;
         display: flex;
         width: auto;
         flex-direction: column;
         align-self: flex-start;
         overflow: auto;
         z-index: 1;
-        color: white
+        color: white;
     }
 
     .menu-hamburguer-elements {
@@ -413,9 +413,9 @@ footer {
         height: 100%;
         background-color: rgba(10,10,10,.9);
         position: fixed;
-        left: -60%;
+        right: -60%;
         top: 0;
-    
+        margin-top: -20%;
         transition: left cubic-bezier(1,0,0,1) .8s;
         
         display: flex;
@@ -435,7 +435,9 @@ footer {
         font-size: 2rem;
         align-items: center;
         color: var(--font-color);
+        right: 10px;
     }
+
 
     #sobre {
         display: block;
