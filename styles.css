@@ -10,6 +10,15 @@
     padding: 0;
 }
 
+section {
+    box-sizing: border-box;
+    letter-spacing: 1.1px;
+}
+
+.red {
+    color: var(--primary-color);
+}
+
 body {
     font-family: "Montserrat", sans-serif;
 }
@@ -22,7 +31,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 8vh;
+    height: 12vh;
     box-sizing: border-box;
     align-items: center;
     background-color: var(--primary-color);
@@ -112,12 +121,12 @@ li {
 }
 
 .nav a:hover {
-    color: rgb(255, 169, 169);
-    transition: color 0.3s ease-in-out;
+    color: black;
+    transition: color 0.45s ease-in-out;
 }
 
 .scroll-nav a:hover {
-    color: rgb(155, 155, 155);
+    color: var(--primary-color);
     transition: color 0.3s ease-in-out;
 }
 
@@ -204,25 +213,17 @@ li {
   }
 
 #inicio {
-    position: relative;
     display: flex;
-    padding: 0 20px;
+    padding: 0;
     box-sizing: border-box;
     width: 100%;
     align-items: center;
     justify-content: center;
     margin: 0;
-    height: 100vh;
+    height: fit-content;
     background-color: var(--primary-color);
+    letter-spacing: 2.5rem;
 }
-
-#apresentacao {
-    margin-right: 1rem;
-    padding: 0;
-    box-sizing: border-box;
-    position: absolute;
-}
-
 
 #meu-nome {
     font-size: 20vw;
@@ -242,32 +243,34 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 140px 0 134px;
+    padding: 140px 0 134px;    
     width: 100%;
     font-size: 1.5rem;
     background-color: var(--secondary-color);
-    margin: 0;
     color: var(--font-color);
-    height: 100vh;
+    height: fit-content;
+    margin: 100 0 100 0;
 }
 
 #div-titulo-sobre {
     display: block;
     font-size: 3.5rem;
-    margin-left: -2.5rem;
-    transform: rotate(-90deg);
     text-decoration: underline;
     text-decoration-thickness: 8px;
+    padding-right: 12rem;
+    padding-left: 5rem;
 }
 
-
 #div-texto-sobre {
-    margin-right: 1.5rem;
-    margin-left: -1rem;
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: justify;
-    font-size: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+p {
+    font-size: 1.4rem;
+    max-width: 800px;
+    margin-bottom: 20px;
 }
 
 #projetos {
