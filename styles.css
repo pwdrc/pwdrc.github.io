@@ -14,7 +14,7 @@ body {
     overflow-x: hidden; /* Impede a rolagem horizontal */
 }
 
-section, header, #inicio, #sobre, #projetos, #contato, #posts {
+section, header, #inicio, #sobre, #projetos, #contato, #posts, footer {
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -388,7 +388,6 @@ footer {
     padding: 20px;
     text-align: center;
     bottom: 0;
-    width: 100%;
 }
 
 footer p {
@@ -502,9 +501,4 @@ footer p {
         display: block;
     }
 
-    footer {
-        position: relative; /* Alterado para position relative */
-        width: 100%;
-        text-align: center; /* Centralizando o texto do footer */
-    }
 }
